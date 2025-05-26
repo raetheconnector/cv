@@ -15,13 +15,13 @@
             @apply text-2xl font-semibold text-sky-700 mb-4 pb-2 border-b border-sky-200;
         }
         .card {
-            @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+            @apply bg-white p-4 sm:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
         }
         .tag {
             @apply bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium mr-2 mb-2;
         }
         .icon {
-            @apply w-5 h-5 mr-2 text-sky-600;
+            @apply w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-sky-600;
         }
         /* Custom scrollbar for better aesthetics */
         ::-webkit-scrollbar {
@@ -40,12 +40,12 @@
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-800 max-w-screen overflow-x-hidden">
 
-    <header class="bg-sky-700 text-white p-6 shadow-md">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-            <div class="flex items-center mb-4 md:mb-0">
-                <img src="Pics/RaePic.jpg" alt="Rae Adams-Fruet" class="w-24 h-24 md:w-32 md:h-32 rounded-full mr-6 border-4 border-sky-200 object-cover">
+    <header class="bg-sky-700 text-white p-4 md:p-6 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-2 sm:px-4">
+            <div class="flex items-center mb-4 md:mb-0 flex-wrap justify-center md:justify-start">
+                <img src="Pics/RaePic.jpg" alt="Rae Adams-Fruet" class="w-24 h-24 md:w-32 md:h-32 rounded-full mr-4 md:mr-6 border-4 border-sky-200 object-cover">
                 <div>
                     <h1 class="text-3xl md:text-4xl font-bold">Rae Adams-Fruet</h1>
                     <p class="text-xl md:text-2xl text-sky-200">Stewardess</p>
@@ -72,27 +72,27 @@
         </div>
     </header>
 
-    <main class="container mx-auto p-6">
+    <main class="container mx-auto px-4 sm:px-6 py-6">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
             <div class="lg:col-span-2 space-y-6">
-                <section class="card">
+                <section class="card overflow-hidden px-3 sm:px-6">
                     <h2 class="section-title font-bold">Personal Objective</h2>
                     <br>
-                    <p class="text-gray-700 leading-relaxed">
+                    <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                         Seeking a permanent stewardess position on board a Private/Charter M/Y.
                         After an incredible career in the airline industry, I've hung up my wings for sea legs, where I will bring my passion for world-class service, adaptability, and attention to detail to the yachting industry. My aim is to provide exceptional guest experiences, ensuring comfort, and contributing to a professional and harmonious crew environment. My strong work ethic, excellent interpersonal skills, and passion for creating memorable moments make me a valuable addition to any crew.
                     </p>
                 </section>
 
-                <section class="card">
+                <section class="card overflow-hidden px-3 sm:px-6">
                     <h2 class="section-title font-bold">Yachting Experience</h2>
                     <br>
                     <div class="space-y-6">
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">2nd Stewardess - M/Y EAU LA LA - 37M (Charter - Relief)</h3>
-                            <p class="text-sm text-gray-500">Dec 2024 - Jan 2025 | St. Maarten</p>
-                            <p class="text-gray-700 mt-1">10-day St. Barts New Year's trip (11 guests, Late shift).</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">2nd Stewardess - M/Y EAU LA LA - 37M (Charter - Relief)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Dec 2024 - Jan 2025 | St. Maarten</p>
+                            <p class="text-sm sm:text-base text-gray-700 mt-1">10-day St. Barts New Year's trip (11 guests, Late shift).</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Responsibilities: Housekeeping, Laundry, Service.</li>
                                 <li>Assisted Chef when the Chief Stew was off board.</li>
@@ -101,10 +101,10 @@
                                 <li>Liaised with the Chief Stew to ensure smooth daily operations.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Service Stewardess - FLL Boat Show 2024 (Edmiston Villa)</h3>
-                            <p class="text-sm text-gray-500">Oct 2024 - Nov 2024</p>
-                             <p class="text-gray-700 mt-1">As part of a team of nine stews at The Edmiston Villa.</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">Service Stewardess - FLL Boat Show 2024 (Edmiston Villa)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Oct 2024 - Nov 2024</p>
+                             <p class="text-sm sm:text-base text-gray-700 mt-1">As part of a team of nine stews at The Edmiston Villa.</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Organized pantry and service stations.</li>
                                 <li>Responsible for the coffee pantry, including performing barista duties.</li>
@@ -116,9 +116,9 @@
                                 <li>Consistently ensured immaculate presentation and a welcoming atmosphere for all guests.</li>
                             </ul>
                         </div>
-                         <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Stewardess - M/Y IRON GRYPHON - 30M (Private Vessel)</h3>
-                            <p class="text-sm text-gray-500">Aug 2024 - Nov 2024</p>
+                         <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">Stewardess - M/Y IRON GRYPHON - 30M (Private Vessel)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Aug 2024 - Nov 2024</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Executed full interior detailing of both guest and crew areas, often within demanding 24-hour turnarounds between owner trips.</li>
                                 <li>Consistently ensured high standards of service and guest comfort.</li>
@@ -129,9 +129,9 @@
                                 <li>Meticulously prepared the yacht for broker viewings, ensuring optimal presentation.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Stewardess - M/Y CABANA - 26M (Charter Vessel)</h3>
-                            <p class="text-sm text-gray-500">May 2021 - June 2024</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">Stewardess - M/Y CABANA - 26M (Charter Vessel)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">May 2021 - June 2024</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Meticulously detailed beds and heads.</li>
                                 <li>Ensured high standards of service and guest comfort.</li>
@@ -139,10 +139,10 @@
                                 <li>Liaised effectively with the Captain, Chef, and deck crew to ensure smooth daily operations.</li>
                             </ul>
                         </div>
-                         <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Stewardess - M/Y JASCA - 35M (Private Vessel - Relief)</h3>
-                            <p class="text-sm text-gray-500">Aug 2024 - Aug 2024</p>
-                             <p class="text-gray-700 mt-1">As Lead Stew (Live-aboard, Late Shift) during an owner's trip.</p>
+                         <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">Stewardess - M/Y JASCA - 35M (Private Vessel - Relief)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Aug 2024 - Aug 2024</p>
+                             <p class="text-sm sm:text-base text-gray-700 mt-1">As Lead Stew (Live-aboard, Late Shift) during an owner's trip.</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Maintained exceptional service standards and ensured paramount guest comfort.</li>
                                 <li>Upheld and reinforced high standards for service etiquette, cleaning protocols, and guest interaction.</li>
@@ -150,10 +150,10 @@
                                 <li>Liaised effectively with the Captain, Chef, and deck crew to guarantee smooth daily operations.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">2nd Stewardess - M/Y STARSHIP - 56M (Charter Vessel - Relief)</h3>
-                            <p class="text-sm text-gray-500">May 2024 - May 2024</p>
-                             <p class="text-gray-700 mt-1">During a 10-day Atlantic coast golf trip (Early Shift).</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">2nd Stewardess - M/Y STARSHIP - 56M (Charter Vessel - Relief)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">May 2024 - May 2024</p>
+                             <p class="text-sm sm:text-base text-gray-700 mt-1">During a 10-day Atlantic coast golf trip (Early Shift).</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Performed morning duties, including breakfast setup and service.</li>
                                 <li>Conducted thorough housekeeping and daily cleaning of all interior areas.</li>
@@ -164,10 +164,10 @@
                                 <li>Liaised closely with the Chief Stew to ensure smooth daily operations.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Stewardess - M/Y STARFIRE - 54M (Refit Yard Period - Relief)</h3>
-                            <p class="text-sm text-gray-500">Nov 2023 - Dec 2023</p>
-                             <p class="text-gray-700 mt-1">As part of a skeleton crew (live-aboard basis).</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">Stewardess - M/Y STARFIRE - 54M (Refit Yard Period - Relief)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Nov 2023 - Dec 2023</p>
+                             <p class="text-sm sm:text-base text-gray-700 mt-1">As part of a skeleton crew (live-aboard basis).</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Responsible for comprehensive interior detailing.</li>
                                 <li>Managed all housekeeping and laundry operations.</li>
@@ -175,10 +175,10 @@
                                 <li>Diligently performed watch duties.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Stewardess - M/Y RISING SUN - 138M (Private Vessel - Relief)</h3>
-                            <p class="text-sm text-gray-500">Sep 2023 - Oct 2023</p>
-                             <p class="text-gray-700 mt-1">Joined the yacht in Portland, Maine (live-aboard basis) to provide temporary cover for a Service Stew on leave.</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">Stewardess - M/Y RISING SUN - 138M (Private Vessel - Relief)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Sep 2023 - Oct 2023</p>
+                             <p class="text-sm sm:text-base text-gray-700 mt-1">Joined the yacht in Portland, Maine (live-aboard basis) to provide temporary cover for a Service Stew on leave.</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Preparing the yacht for an upcoming owner's trip.</li>
                                 <li>Executing daily morning duties, with a focus on interior detailing and maintaining the cleanliness of the crew mess.</li>
@@ -188,20 +188,20 @@
                                 <li>Diligently performing watch duties.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">3rd Stewardess - M/Y LADY B - 52M (Charter Vessel - Relief)</h3>
-                            <p class="text-sm text-gray-500">Nov 2022 - Dec 2022</p>
-                             <p class="text-gray-700 mt-1">Joined the yacht in St. Barths (live-aboard basis) for a 14-day owner's trip.</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">3rd Stewardess - M/Y LADY B - 52M (Charter Vessel - Relief)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Nov 2022 - Dec 2022</p>
+                             <p class="text-sm sm:text-base text-gray-700 mt-1">Joined the yacht in St. Barths (live-aboard basis) for a 14-day owner's trip.</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Performing daily morning duties.</li>
                                 <li>Managing all guest and crew laundry.</li>
                                 <li>Maintaining high standards of cleanliness in guest cabins, interior common areas, and the crew mess.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">6th Stewardess - M/Y SYCARA V - 68M (Charter Vessel - Relief)</h3>
-                            <p class="text-sm text-gray-500">Nov 2022 - Nov 2022</p>
-                             <p class="text-gray-700 mt-1">During a 16-day voyage from Fort Lauderdale to St. Maarten and St. Barths, served as Laundry Stew.</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">6th Stewardess - M/Y SYCARA V - 68M (Charter Vessel - Relief)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Nov 2022 - Nov 2022</p>
+                             <p class="text-sm sm:text-base text-gray-700 mt-1">During a 16-day voyage from Fort Lauderdale to St. Maarten and St. Barths, served as Laundry Stew.</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Managing all aspects of laundry operations.</li>
                                 <li>Assisted with general housekeeping duties.</li>
@@ -209,20 +209,20 @@
                                 <li>Diligently performed watch duties.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">3rd Stewardess - M/Y ARKADIA - 50M (Charter Vessel - Relief)</h3>
-                            <p class="text-sm text-gray-500">Sep 2022 - Oct 2022</p>
-                             <p class="text-gray-700 mt-1">During a 10-day owner's trip from Fort Lauderdale (FLL) to the Bahamas, served as Morning Stewardess.</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">3rd Stewardess - M/Y ARKADIA - 50M (Charter Vessel - Relief)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Sep 2022 - Oct 2022</p>
+                             <p class="text-sm sm:text-base text-gray-700 mt-1">During a 10-day owner's trip from Fort Lauderdale (FLL) to the Bahamas, served as Morning Stewardess.</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Managing all laundry requirements.</li>
                                 <li>Performing comprehensive housekeeping duties.</li>
                                 <li>Maintaining the cleanliness and order of the crew mess.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">4th Stewardess - M/Y LADY JJ - 55M (Charter Vessel - Relief)</h3>
-                            <p class="text-sm text-gray-500">Dec 2021 - Jan 2022</p>
-                             <p class="text-gray-700 mt-1">During a 14-day Christmas and New Year's owner's trip from Fort Lauderdale (FLL) to the Bahamas, served as Morning Stewardess.</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">4th Stewardess - M/Y LADY JJ - 55M (Charter Vessel - Relief)</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Dec 2021 - Jan 2022</p>
+                             <p class="text-sm sm:text-base text-gray-700 mt-1">During a 14-day Christmas and New Year's owner's trip from Fort Lauderdale (FLL) to the Bahamas, served as Morning Stewardess.</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Managing all laundry operations.</li>
                                 <li>Performing comprehensive housekeeping duties throughout guest and common areas.</li>
@@ -232,34 +232,34 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card overflow-hidden px-3 sm:px-6">
                     <h2 class="section-title font-bold">Previous Experience</h2>
                     <br>
                     <div class="space-y-6">
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Restaurant Hostess - Villa 47</h3>
-                            <p class="text-sm text-gray-500">Apr 2017 - Dec 2020</p>
-                            <p class="text-gray-700 mt-1">In a luxury dining setting, key responsibilities included:</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">Restaurant Hostess - Villa 47</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Apr 2017 - Dec 2020</p>
+                            <p class="text-sm sm:text-base text-gray-700 mt-1">In a luxury dining setting, key responsibilities included:</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Welcoming guests with warmth and professionalism, consistently ensuring a seamless and high-quality dining experience.</li>
                                 <li>Efficiently managing reservations and strategically coordinating seating arrangements.</li>
                                 <li>Upholding the restaurant's exacting five-star service standards in all guest interactions.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Product Specialist - MINI Cooper</h3>
-                            <p class="text-sm text-gray-500">Aug 2018 - Aug 2020</p>
-                            <p class="text-gray-700 mt-1">Key responsibilities and achievements included:</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">Product Specialist - MINI Cooper</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Aug 2018 - Aug 2020</p>
+                            <p class="text-sm sm:text-base text-gray-700 mt-1">Key responsibilities and achievements included:</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Leveraged expert product knowledge to effectively communicate MINI vehicle specifications, features, and customization options, guiding customers in selecting their ideal model.</li>
                                 <li>Fostered strong customer relationships by delivering exceptional service throughout the sales process.</li>
                                 <li>Actively contributed to achieving dealership sales goals.</li>
                             </ul>
                         </div>
-                        <div class="border-l-4 border-sky-500 pl-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Cabin Crew / Flight Attendant</h3>
-                            <p class="text-sm text-gray-500">Qatar Airways (Sep 2014 - Feb 2017) | Emirates Airlines (Oct 2012 - May 2014)</p>
-                            <p class="text-gray-700 mt-1">As Cabin Crew for these leading international airlines, key responsibilities included:</p>
+                        <div class="border-l-4 border-sky-500 pl-2 sm:pl-4">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800 break-words">Cabin Crew / Flight Attendant</h3>
+                            <p class="text-xs sm:text-sm text-gray-500">Qatar Airways (Sep 2014 - Feb 2017) | Emirates Airlines (Oct 2012 - May 2014)</p>
+                            <p class="text-sm sm:text-base text-gray-700 mt-1">As Cabin Crew for these leading international airlines, key responsibilities included:</p>
                             <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                                 <li>Delivering exceptional in-flight service, consistently prioritizing passenger safety, comfort, and satisfaction.</li>
                                 <li>Skillfully addressing diverse passenger needs and requests while maintaining a high level of professionalism under pressure.</li>
@@ -271,7 +271,7 @@
             </div>
 
             <div class="lg:col-span-1 space-y-6">
-                <section class="card">
+                <section class="card overflow-hidden px-3 sm:px-6">
                     <h2 class="section-title font-bold">Skills</h2>
                     <br>
                     <div class="flex flex-col space-y-2">
@@ -285,7 +285,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card overflow-hidden px-3 sm:px-6">
                     <h2 class="section-title font-bold">Qualifications</h2>
                     <ul class="space-y-2 text-gray-700">
                         <li class="flex items-center"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>WSET Level 1 in Wines</li>
@@ -299,7 +299,7 @@
                     </ul>
                 </section>
 
-                <section class="card">
+                <section class="card overflow-hidden px-3 sm:px-6">
                     <h2 class="section-title">Personal Characteristics</h2>
                     <ul class="space-y-2 text-gray-700">
                         <li class="flex items-center"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Nationality: South Africa</li>
@@ -313,7 +313,7 @@
                     </ul>
                 </section>
 
-                <section class="card">
+                <section class="card overflow-hidden px-3 sm:px-6">
                     <h2 class="section-title font-bold">Interests</h2>
                     <div class="flex flex-col space-y-2">
                         <span class="tag inline-block">Yoga</span>
@@ -328,7 +328,7 @@
                         <span class="tag inline-block">Running</span>
                     </div>
                 </section>
-                 <section class="card">
+                 <section class="card overflow-hidden px-3 sm:px-6">
                     <h2 class="section-title font-bold">References</h2>
                      <p class="text-gray-700 leading-relaxed mb-3">Available upon request. Contact information for previous Chief Stews and Owners/Brokers can be provided.</p>
                     <div class="space-y-3 text-sm">
@@ -345,7 +345,7 @@
         </div>
     </main>
 
-    <footer class="bg-sky-800 text-sky-200 text-center p-6 mt-8">
+    <footer class="bg-sky-800 text-sky-200 text-center p-4 md:p-6 mt-8">
         <p>&copy; <span id="currentYear"></span> Rae Adams-Fruet. All rights reserved.</p>
         <p class="text-xs mt-1">Designed with Tailwind CSS.</p>
     </footer>
